@@ -1,0 +1,260 @@
+ 
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+ 	padding-bottom :150px;
+}
+
+ 
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+main {
+ 
+  width: 80%;
+  padding: 50px;
+  margin:  0px auto;
+  background: #fff;  
+  padding-bottom :150px;
+ 
+}
+.footer{
+ 
+    width: 100%;
+ 
+}
+h1{padding:15px;padding-left:0px;}
+ h3{
+	 font-size:15px;
+	 color:#797e81;
+	 padding:15px;
+	 padding-left:0px;
+	 text-decoration: underline;
+ }
+ ul {
+    margin-bottom: 14px; 
+	
+}
+li { width: 300px; height: 30px;  }
+section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+  height :auto;
+ 
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+} 
+
+label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #555;
+  border-bottom: 2px solid #2d9cdb;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2 {
+  display: block;
+}
+ 
+.products{
+	width:75%; 
+	float:left;	
+ 
+}
+.product-item{
+	width:42%;
+	padding :2%;
+	margin:10px;
+	display:inline-block;
+	float:left;
+	border-radius:6px;
+	border : 1px solid gray;
+	border-bottom : 2px solid gray;	
+}
+.product-item:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor:pointer;
+}
+.product-item .product-image{
+width:75%;
+height:auto; 
+padding-bottom:23px; 
+}
+.product-item .product-description{
+width:100%;
+ 
+float:left;
+}
+.button-tryit{
+	background-color:#56ccf2;
+	display:inline-block;
+	border-radius:3px;
+	color:white;
+	height:25px;
+	font-size:14px; 
+	padding-left:15px;
+	padding-right:15px;
+	vertical-align: middle;
+	line-height: 25px;
+	text-decoration:none;
+}
+
+.button-tryit:hover{
+	background-color:#f2c94c;
+}
+.button-screenshot{
+	
+	background-color:#bfc3c6;
+	border-radius:3px;
+	display:inline-block;
+	color:white;
+	height:25px;
+	font-size:14px; 	
+	padding-left:15px;
+	padding-right:15px;
+    vertical-align: middle;
+	line-height: 25px;
+	cursor: zoom-in;
+	float:right;
+	text-decoration:none;
+}
+.button-screenshot:hover{
+background-color:#797e81;	
+}
+.product-header{
+	width:100%;
+	font-weight:bold; 
+	font-size:18px;}
+.product-stars{
+	width:40%;
+	display:inline-block;
+	padding-bottom:15px;
+	padding-top:15px;
+	}
+.product-stars img{
+	width:20%;
+	display:inline-block;
+}
+.product-reviews{
+	width:50%;
+	display:inline-block;
+	font-size:13px;
+	color:#56ccf2;
+	padding-top:15px;
+	padding-bottom:15px;}
+	
+.side-bar-right{
+	float:right;
+	width:25%;
+ 
+	
+}
+.blog-post{
+	 width:100%;
+	 float:right; 
+	 height:270px;
+	  position: relative;
+	  overflow: hidden; 	  
+	border-bottom : 2px solid gray;
+	margin-top:10px;
+	 margin-bottom:10px;
+	border-radius:6px; 	
+}
+.blog-post img{
+  max-width: initial; 
+  float:left;
+}
+.blog-post:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor:pointer;
+}
+.blog-post .bottom-left-header {
+    position: absolute;
+    bottom: 38px;
+    left: 16px;
+	color:white; 
+	font-size:18px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	 overflow: hidden;
+	  display: block;
+  width: 210px;
+}
+.blog-post .bottom-left-button {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+	background-color:#bfc3c6;
+	border-radius:3px; 
+	color:black;
+	height:25px;
+	font-size:14px; 	 
+    vertical-align: middle;
+	line-height: 25px; 
+	float:right;
+	text-decoration:none;
+	padding-left:10px;
+	padding-right:10px;
+}
+.bottom-left-button:hover {background-color:#797e81;}
+.content{width:100%;display: flex;}
+@media screen and (max-width: 650px) {
+	.content{width:100%;display: block;}
+	main {
+	width: 100%;}
+ .products{
+ width:100%;
+ }
+ 	
+.side-bar-right{
+	width:100%;
+}
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+    label {
+    padding: 15px;width:90%;height:40px;
+  }
+  .product-item{
+	width:100%;
+}
+.button-screenshot{float:left;}
+}
