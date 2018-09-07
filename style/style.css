@@ -234,7 +234,7 @@ background-color:#797e81;
 	padding-right:10px;
 }
 .bottom-left-button:hover {background-color:#797e81;}
-.content{width:100%;display: flex;}
+.content{width:100%;display: flex;} 
 @media screen and (max-width: 650px) {
 	.content{width:100%;display: block;}
 	main {
